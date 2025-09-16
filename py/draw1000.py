@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from datetime import datetime
 
-# 设置中文字体支持
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体
+# 设置中文字体支持SimHei
+plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']  # 使用黑体Arial Unicode MS
 plt.rcParams['axes.unicode_minus'] = False    # 解决负号显示问题
 
 # 读取CSV文件
