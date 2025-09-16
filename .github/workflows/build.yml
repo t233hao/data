@@ -15,6 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Install CNS11643 fonts
+        uses: RisingInIris2017/cjk-fonts-action@v1
+
       - name: Checkout repository
         uses: actions/checkout@v2
 
