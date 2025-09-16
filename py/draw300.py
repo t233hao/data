@@ -4,8 +4,8 @@ import numpy as np
 from datetime import datetime
 
 # 设置中文字体支持SimHei
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体
-plt.rcParams['axes.unicode_minus'] = False    # 解决负号显示问题
+#plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体
+#plt.rcParams['axes.unicode_minus'] = False    # 解决负号显示问题
 
 # 读取CSV文件
 df = pd.read_csv('沪深300ETF.csv')

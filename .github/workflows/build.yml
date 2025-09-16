@@ -15,11 +15,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install CNS11643 fonts
-        uses: RisingInIris2017/cjk-fonts-action@v1
-
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: Install Chinese fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk fonts-wqy-microhei
+          sudo fc-cache -fv
+          # 验证字体安装
+          fc-list | grep -i "Noto Sans CJK" || echo "Noto字体安装检查"
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -30,16 +35,29 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Configure matplotlib for Chinese support
+        run: |
+          python -c "
+          import matplotlib.pyplot as plt
+          # 配置中文字体支持
+          plt.rcParams['font.sans-serif'] = [
+              'Noto Sans CJK SC', 
+              'SimHei'
+          ]
+          plt.rcParams['axes.unicode_minus'] = False
+          print('Matplotlib已配置中文字体支持')
+          "
+
       - name: Run Task
         run: |
           python main.py
 
       - name: Push New Data
         run: |
-            git config --local user.email "youlongyang52@gmail.com"
-            git config --local user.name "${{ github.actor }}"
-            git remote set-url origin https://${{ github.actor }}:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}
-            git add .
-            git commit -m "generated today data" || echo "no need to commit "
-            git pull origin main --rebase
-            git push -f || echo "no file change"
+          git config --local user.email "youlongyang52@gmail.com"
+          git config --local user.name "${{ github.actor }}"
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}
+          git add .
+          git commit -m "generated today data" || echo "no need to commit "
+          git pull origin main --rebase
+          git push -f || echo "no file change"
