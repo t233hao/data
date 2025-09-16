@@ -2,10 +2,29 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from datetime import datetime
+import matplotlib.font_manager as fm
+import os
+
+# 获取当前目录下的TTF字体文件
+current_dir = os.path.dirname(os.path.abspath(__file__))
+ttf_files = [f for f in os.listdir(current_dir) if f.endswith('.ttf')]
+
+if ttf_files:
+    # 添加字体到Matplotlib字体管理器
+    font_path = os.path.join(current_dir, ttf_files[0])
+    fm.fontManager.addfont(font_path)
+    
+    # 获取字体名称
+    font_prop = fm.FontProperties(fname=font_path)
+    font_name = font_prop.get_name()
+    
+    # 设置全局字体
+    plt.rcParams['font.family'] = font_name
+    plt.rcParams['axes.unicode_minus'] = False  # 解决负号显示问题
 
 # 设置中文字体支持SimHei
-plt.rcParams['font.sans-serif'] = ['Noto Sans CJK SC']  # 使用黑体
-plt.rcParams['axes.unicode_minus'] = False    # 解决负号显示问题
+# plt.rcParams['font.sans-serif'] = ['SimHei']  # 使用黑体
+# plt.rcParams['axes.unicode_minus'] = False    # 解决负号显示问题
 
 # 读取CSV文件
 df = pd.read_csv('沪深300ETF.csv')
