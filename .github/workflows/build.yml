@@ -1,0 +1,39 @@
+name: CI/CD Workflow
+
+on:
+  push:
+    branches:
+      - main
+  # schedule:
+  #   - cron: '5 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Task
+        run: |
+          python main.py
+
+      - name: Push New Data
+        run: |
+            git config --local user.email "youlongyang52@gmail.com"
+            git config --local user.name "${{ github.actor }}"
+            git remote set-url origin https://${{ github.actor }}:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}
+            git add .
+            git commit -m "generated today data" || echo "no need to commit "
+            git pull origin main --rebase
+            git push -f || echo "no file change"
