@@ -43,7 +43,7 @@ def fetch_szse_data(sec_code="159919", date="2025-09-09", max_retries=3):
     session.mount("https://", adapter)
     
     try:
-        # 发送请求
+        # 第一次尝试
         response = session.get(base_url, params=params, headers=headers, timeout=30)
         response.raise_for_status()
         
@@ -51,7 +51,38 @@ def fetch_szse_data(sec_code="159919", date="2025-09-09", max_retries=3):
         return response.json()
         
     except Exception as e:
-        print(f"请求失败: {e}")
+        print(f"第一次请求失败: {e}")
+        
+        # 在except块内循环重试3次
+        for retry_count in range(1, 4):  # 重试3次，从1到3
+            try:
+                print(f"第{retry_count+1}次尝试...")
+                
+                # 更新随机参数防止缓存
+                params["random"] = int(time.time() * 1000)
+                
+                # 创建新的会话（避免使用可能已污染的连接）
+                new_session = requests.Session()
+                new_session.trust_env = False
+                
+                # 重新发送请求
+                response = new_session.get(base_url, params=params, headers=headers, timeout=30)
+                response.raise_for_status()
+                
+                print(f"第{retry_count+1}次尝试成功！")
+                return response.json()
+                
+            except Exception as retry_error:
+                print(f"第{retry_count+1}次尝试失败: {retry_error}")
+                
+                # 如果不是最后一次重试，等待一段时间
+                if retry_count < 3:
+                    wait_time = 2 ** retry_count  # 指数退避：2, 4秒
+                    print(f"等待{wait_time}秒后重试...")
+                    time.sleep(wait_time)
+        
+        # 所有重试都失败
+        print("所有重试均失败")
         return None
 
 def is_json_complete(data):
