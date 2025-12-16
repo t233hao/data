@@ -59,18 +59,23 @@
 
 - [华泰柏瑞沪深300ETF.(510300) 历史累计申购资金净流入曲线图](https://www.lixinger.com/equity/fund/detail/sh/510300/510300/shares)
 - [南方中证1000ETF.(512100) 历史累计申购资金净流入曲线图](https://www.lixinger.com/equity/fund/detail/sh/512100/512100/shares)
-
 - [报告解构之三|跟踪GJD资金流入的效果如何？](https://mp.weixin.qq.com/s/bdtgJOuNTtaXbQ0NqdDMMg)
+- [如何追踪“国家队”构建股票优选组合-中银量化多因子选股系列专题](https://mp.weixin.qq.com/s/BA0WU6RS3O9JTAJPlTcbxQ)
 - [回溯历史告诉你，国家队每次增持都是绝佳的抄底时机！](https://mp.weixin.qq.com/s/UVLdPjoIQekDpw1YuL-naw)
 - [国家队今天抄底了没有？如何高频跟踪国家队动向？](https://mp.weixin.qq.com/s/IozMd0wsNxAf3bchLAi6Vg)
 - [A500不要哭泣，你可能并没有被抛弃](https://mp.weixin.qq.com/s/2CYLXqKDq4wfabHf5qn3Rg)
 - [中国股票策略：如何跟踪和量化“国家队”的流入？](https://mp.weixin.qq.com/s/sG83Y3IreFqgjFyNGoNvFQ)
 - [追踪ETF成交量，紧跟国家队步伐](https://mp.weixin.qq.com/s/-qRbYk_JO2mUsMkl2XgcmQ)
 - [“国家队”ETF持仓及资金流透视——资金流向和中短线指标体系跟踪（十二）| 东吴策略](https://mp.weixin.qq.com/s/eROb7ZummN15wbMHywih-w)
+- [近期ETF增量资金如何影响市场表现结构？| 东吴策略](https://mp.weixin.qq.com/s/Kfg9covmllxj2FHzfImzaA)
 - [【兴证策略张启尧团队】“国家队”增持哪些ETF？](https://mp.weixin.qq.com/s/W26VvFHniM6F37EIeOLYRA)
 - [中金：汇金再度增持ETF释放积极信号](https://mp.weixin.qq.com/s/WwB0qgmZq3l7tA12ZtDyAg)
 - [ETF资金流向，真能洞悉主力的进出吗](https://mp.weixin.qq.com/s/xiWMJDTVRl_YICtikMg_yQ)
 - [【长江另类策略陈洁敏团队】ETF份额变化是否有择时效果？](https://mp.weixin.qq.com/s/yz5-jzjFH7dfckKQCmc_BA)
+- [【瞎扯】国家队2024年在大A里赚了多少钱？](https://mp.weixin.qq.com/s/C1CzBrU4zQJbKXJ0wekW2g)
+- [汇金万亿投资图谱（上）：战略性扩编 |《财经》封面](https://mp.weixin.qq.com/s/b_GqGlwmmyFSMLRAaIOYJg)
+- [汇金万亿投资图谱（下）：国家队的使命 |《财经》封面](https://mp.weixin.qq.com/s/j-0OP6qJOwjeLVNMfXowIw)
+- [中央汇金投资有限责任公司2025年主体长期信用评级报告](https://www.chinamoney.org.cn/dqs/rest/cm-s-security/dealPath?path=Jnw5ofpjlbE%253DuZ9TuHgZHBAAf1R6YB58X0IWqB3vXZjBhPcrCH0XreXOOMNYcBmC9K2%252BXr0PbNHL%252FERg%252FsgLr4WyJxe6g4RU0w%253D%253D&cp=ztpjbg&ut=pEodvKmMoWotSUCY%2B9zx1gie68axXE6a74GJXoDiUe1JPwLaRkTi3EwpVcYDvdQy3CaD7EKRXXl3%0AmvpBhqZFlH6xzIWu89fPXGlDynWxZFWRDTFlVuh7ln/Wyh8COOHsy82wOIex9r3HGeAaU7fD0XZp%0AcYpaw5Ufu5ePhxUTiwg=%0A&sign=Q/d8solfMh3GOoMI5WmGUaZA1ukiCpO5sMwap9ByMZnt4tsJZeSkX6Wq1v3lRrKsnQLcWdAPun00%0ALsYa5AtcTZpCs2CvuKf8xTKL5JKkAphGIIEbpsADAhjeg2dCZIBVMUOFd2LaiLvRLJLML9AfJTc/%0AI44XV2MvFkyyEBuTLsA=%0A)
 
 *报告说明：本分析基于公开市场数据和第三方研究报告，仅供参考，不构成投资建议。*
 
