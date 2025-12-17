@@ -72,6 +72,9 @@
 - [中金：汇金再度增持ETF释放积极信号](https://mp.weixin.qq.com/s/WwB0qgmZq3l7tA12ZtDyAg)
 - [ETF资金流向，真能洞悉主力的进出吗](https://mp.weixin.qq.com/s/xiWMJDTVRl_YICtikMg_yQ)
 - [【长江另类策略陈洁敏团队】ETF份额变化是否有择时效果？](https://mp.weixin.qq.com/s/yz5-jzjFH7dfckKQCmc_BA)
+- [【瞎扯】回顾2015年的救市，拉中小盘股就已经进入二阶段了](https://mp.weixin.qq.com/s/gBxbKhw9iT6Fc2NJihvHDw)
+- [【瞎扯】国家队还得托大A多久呢？](https://mp.weixin.qq.com/s/FYd1sj-VQSr31NZseKAsMw)
+
 - [【瞎扯】国家队托底大A亏本了吗？](https://mp.weixin.qq.com/s/CPzTgiZIEZWgfy3B-v4--A)
 - [【瞎扯】国家队2024年在大A里赚了多少钱？](https://mp.weixin.qq.com/s/C1CzBrU4zQJbKXJ0wekW2g)
 - [汇金万亿投资图谱（上）：战略性扩编 |《财经》封面](https://mp.weixin.qq.com/s/b_GqGlwmmyFSMLRAaIOYJg)
