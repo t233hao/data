@@ -37,7 +37,7 @@ df['成交量(十亿元)'] = df['总成交额(万元)'] / 100000
 
 # 计算日均成交量
 # average_volume = df['成交量(十亿元)'].mean()
-average_volume = 11.8
+average_volume = 7.8
 
 # 创建紧凑的图表
 plt.figure(figsize=(max(8, len(df)*0.4), 6))  # 根据数据量动态调整宽度
@@ -55,7 +55,7 @@ plt.axhline(y=average_volume, color='red', linestyle='--', linewidth=2,
 
 # 设置标题和标签
 plt.title('沪深300 ETF成交量', fontsize=14, fontweight='bold', pad=15)
-plt.xlabel('2025年', fontsize=11, labelpad=8)
+plt.xlabel('2026年', fontsize=11, labelpad=8)
 plt.ylabel('成交量（十亿元）', fontsize=11, labelpad=8)
 
 # 设置Y轴范围和刻度
