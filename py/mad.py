@@ -3,6 +3,7 @@ import numpy as np
 from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
+import matplotlib.ticker as ticker
 import os
 import sys
 
@@ -144,10 +145,23 @@ outlier_labels = new_df_processed[new_df_processed['is_outlier']]['日期标签'
 # 创建紧凑的图表
 plt.figure(figsize=(max(8, len(new_df_processed)*0.1), 6))
 
+# 1. 开启压缩
+plt.yscale('symlog', linthresh=10)
+
+# 2. 找回自动生成的“普通数字”刻度
+ax = plt.gca()
+
+# 让系统自动找刻度，但不要只找 10 的倍数
+ax.yaxis.set_major_locator(ticker.AutoLocator()) 
+
+# 强制把标签转回普通的数字（例如 10 而不是 10^1）
+ax.yaxis.set_major_formatter(ticker.ScalarFormatter())
+
 # 绘制修正Z分数
 plt.plot(new_df_processed['日期'], new_df_processed['lag_mad_z_score'], 
          color='green', linewidth=1, label='修正Z分数')
 plt.axhline(y=2.0, color='red', linestyle='--', alpha=0.7, label='阈值 (+2.0)')
+plt.axhspan(1.75,2.0, color='orange', alpha=0.7, label='预警区间 (+1.75)')
 plt.axhline(y=-2.0, color='red', linestyle='--', alpha=0.7, label='阈值 (-2.0)')
 plt.axhline(y=0, color='black', linestyle='-', alpha=0.5, linewidth=0.5)
 
