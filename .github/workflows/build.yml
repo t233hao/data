@@ -1,11 +1,11 @@
 name: CI/CD Workflow
 
-on:
+# on:
   # push:
   #   branches:
   #     - main
-  schedule:
-    - cron: '0 10 * * *'
+  # schedule:
+  #   - cron: '0 10 * * *'
 
 permissions:
   contents: write
